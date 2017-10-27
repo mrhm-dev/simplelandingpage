@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <style>
+    @media (max-width: 767px) {
+      .navbar,
+      .container {
+        width: 100%;
+      }
+    }
+
+    html,
+    body {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+    }
+
+    .navbar-brand {
+      margin-left: 0;
+    }
+
+    #banner-section {
+      min-height: 700px;
+      background-image: url('img/img.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      margin-top: 50px;
+      text-align: center;
+      color: #f8f8f8;
+    }
+
+    #banner-section #intro-message {
+      background: rgba(0, 0, 0, .7);
+      min-height: 700px;
+    }
+
+    .intro-message {
+      position: relative;
+      padding-top: 20%;
+      padding-bottom: 20%;
+    }
+
+    .intro-message h1 {
+      margin: 0;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, .6);
+      font-size: 5em;
+    }
+
+    .intro-divider {
+      width: 400px;
+      border-top: 1px solid #f8f8f8;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .intro-message>h3 {
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .intro-social-buttons .btn {
+      background: #868E96;
+      border: none;
+      color: #f8f8f8;
+    }
+
+    .intro-social-buttons .btn:hover {
+      background: #727B84;
+    }
+
+    .network-name {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    @media(max-width:767px) {
+      .intro-message {
+        padding-bottom: 15%;
+      }
+      .intro-message>h1 {
+        font-size: 3em;
+      }
+      ul.intro-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+      }
+      ul.intro-social-buttons>li:last-child {
+        margin-bottom: 0;
+      }
+      .intro-divider {
+        width: 100%;
+      }
+    }
+
+    .content-section-a {
+      padding: 50px 0;
+      background-color: #f8f8f8;
+    }
+
+    .content-section-b {
+      padding: 50px 0;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+    }
+
+    .section-heading {
+      margin-bottom: 30px;
+    }
+
+    .section-heading-spacer {
+      float: left;
+      width: 200px;
+      border-top: 3px solid #e7e7e7;
+    }
+
+    .bottom-banner {
+      padding: 100px 0;
+      color: #f8f8f8;
+      background: url(../img/banner-bg.jpg) no-repeat center center;
+      background-size: cover;
+    }
+
+    .bottom-banner h2 {
+      margin: 0;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+      font-size: 3em;
+    }
+
+    .bottom-banner ul {
+      margin-bottom: 0;
+    }
+
+    .banner-social-buttons {
+      float: right;
+      margin-top: 0;
+    }
+
+    @media(max-width:1199px) {
+      ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+      }
+    }
+
+    @media(max-width:767px) {
+      .bottom-banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+        font-size: 3em;
+      }
+      ul.banner-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+      }
+      ul.banner-social-buttons>li:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    
+footer {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+p.copyright {
+  margin: 15px 0 0;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation Bar Top -->
+
+  <div class="bg-faded fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-toggleable-md navbar-fixed-top navbar-light bg-faded">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#menu-item" aria-expanded="false"
+            aria-controls="menu-item" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <a href="#" class="navbar-brand">Start Bootstrap</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu-item">
+          <div class="navbar-nav ml-auto">
+            <a href="#" class="nav-item nav-link">About</a>
+            <a href="#" class="nav-item nav-link">Services</a>
+            <a href="#" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Banner Section -->
+  <div id="banner-section">
+    <div id="intro-message">
+      <div class="container">
+        <div class="intro-message">
+          <h1>Landing Page</h1>
+          <h3>A Template By Start Bootsrtap</h3>
+          <hr class="intro-divider">
+          <ul class="list-inline intro-social-buttons">
+            <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-lg">
+            <i class="fa fa-twitter" aria-hidden="true"></i> 
+            <span class="network-name">Twitter</span>
+          </a></li>
+            <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-lg">
+            <i class="fa fa-github" aria-hidden="true"></i> 
+            <span class="network-name">Github</span>
+          </a></li>
+            <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-lg">
+            <i class="fa fa-linkedin" aria-hidden="true"></i> 
+            <span class="network-name">Linked</span>
+          </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+
+  <section class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 ml-auto">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Death to the Stock Photo: <br>Special Thanks</h2>
+          <p class="lead">A special thanks to
+            <a href="#" target="_blank">Death to the Stock Photo</a> for providing the photographs that you see in this template.
+            Visit their website to become a member.
+          </p>
+        </div>
+        <div class="col-lg-5 mr-auto">
+          <img src="img/ipad.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 ml-auto flex-last">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Death to the Stock Photo: <br>Special Thanks</h2>
+          <p class="lead">A special thanks to
+            <a href="#" target="_blank">Death to the Stock Photo</a> for providing the photographs that you see in this template.
+            Visit their website to become a member.
+          </p>
+        </div>
+        <div class="col-lg-5 mr-auto flex-first">
+          <img src="img/dog.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 ml-auto">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Death to the Stock Photo: <br>Special Thanks</h2>
+          <p class="lead">A special thanks to
+            <a href="#" target="_blank">Death to the Stock Photo</a> for providing the photographs that you see in this template.
+            Visit their website to become a member.
+          </p>
+        </div>
+        <div class="col-lg-5 mr-auto">
+          <img src="img/phones.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--- Bottom Banner  -->
+
+  <aside class="bottom-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 my-auto">
+          <h2>Connect to Start Bootstrap</h2>
+        </div>
+        <div class="col-lg-6 my-auto">
+          <ul class="list-inline banner-social-buttons">
+            <li class="list-inline-item"><a href="#" class="btn btn-secondary btn-lg">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <span class="network-name">Twitter</span>
+            </a></li>
+            <li class="list-inline-item"><a href="" class="btn btn-secondary btn-lg">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <span class="network-name">Github</span>
+            </a></li>
+            <li class="list-inline-item"><a href="" class="btn btn-secondary btn-lg">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <span class="network-name">Linkedin</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <footer>
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="list-inline-item footer-menu-divider">.</li>
+        <li class="list-inline-item">
+          <a href="#">About</a>
+        </li>
+        <li class="list-inline-item footer-menu-divider">.</li>
+        <li class="list-inline-item">
+          <a href="#">Services</a>
+        </li>
+        <li class="list-inline-item footer-menu-divider">.</li>
+        <li class="list-inline-item">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <p class="copyright text-muted small">Copyright &copy; Your Company 2017. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
